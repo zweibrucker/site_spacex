@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Trabalhe Conosco</title>
+</head>
+<body id="trabalhe">
+    <header id="cabecalho">
+        <div class="container">
+            <img src="../imagens/logo.png" alt="logo">
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../internas/missoes.html">Missões</a></li>
+                    <li><a href="../internas/equipe.html">Equipe</em></a></li>
+                    <li><a href="../internas/modelos.html">Modelo</a></li>
+                    <li><a href="../internas/video.html">Video</a></li>
+                    <li><a href="../internas/trabalhe.html">Trabalhe Conosco</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>   
+    
+ <section id="conteudo">
+    <h2>Trabalhe Conosco</h2>
+
+    <form action="" id="formulario"> 
+
+        <h1>Formulario</h1>
+
+        <fieldset>
+            <div>
+                <label for="nome">Nome</label>
+                <input type="text" placeholder="Nome Completo" name="nome" id="nome" required>
+            </div>
+            <div>
+                <label for="email">E-mail</label>
+                <input type="mail" placeholder="Seu Email" name="email" id="email" required>
+            </div>
+            <div>
+                <label for="">Vaga de Interesse:</label>
+                <input type="radio" name="tipo" id="tipo"><label for="tipo">Astronauta</label> 
+                <input type="radio" name="tipo" id="tipo"><label for="tipo">Cientista</label> 
+                <input type="radio" name="tipo" id="tipo"><label for="tipo">Outros</label>
+           
+            </div>
+            <div>
+                <label for="formacao">Formação</label>
+                <select name="formacao" id="formacao" required>
+                    <option value="sup">Superior Completo</option>
+                    <option value="med">Ensino Medio Completo</option>
+                    <option value="fund">Ensino Fundamental Completo</option>
+                </select>
+            </div>
+            <div>
+                <label for="data-nasc">Data de Nascimento</label>
+                <input type="date" nome="data-nasc" id="data-nasc" required>
+            </div>
+            <div>
+                <label for="interesse">Interesse:</label>
+
+                <input type="checkbox" nome="TRABALHO" id="trabalho">
+                <label for="trabalho">Trabalhar</label>
+
+
+                <input type="checkbox" nome="SOCIEDADE" id="sociedade">
+                <label for="sociedade">Entrar em sociedade</label>
+            </div>
+            <div>
+                <label for="mensagem">Fale um pouco sobre você!</label>
+                <textarea name="mensagem" placeholder="Insira seu Texto" id="mensagem" cols="30" rows="10" required></textarea >
+            </div>
+            <div>
+                <input type="submit" id="but" value="Enviar">
+            </div>
+
+        </fieldset>
+
+    </form>
+
+   
+</section>
+
+    
+</body>
+</html>

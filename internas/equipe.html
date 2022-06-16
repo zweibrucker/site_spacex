@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>UM NOVO FUTURO</title>
+
+    <script src="../plugins/jquery.min.js"></script>
+    <script src="../plugins/jquery.bxslider.min.js"></script>
+    <script src="../plugins/jquery.magnific-popup.js"></script>
+    <link rel="stylesheet" href="../plugins/jquery.bxslider.css">
+    <link rel="stylesheet" href="../plugins/magnific-popup.css">
+  
+    <script>
+      $(document).ready(function(){
+        $('#galeria-fotos').magnificPopup({
+		delegate: 'a',
+		type: 'image',
+		closeOnContentClick: false,
+		closeBtnInside: false,
+		mainClass: 'mfp-with- mfp-img-mobile',
+		image: {
+			verticalFit: true,
+			titleSrc: function(item) {
+				return item.el.attr('title') + +item.el.attr('')+'" ';
+			}
+		},
+		gallery: {
+			enabled: true
+		},
+		zoom: {
+			enabled: true,
+			duration: 300, // don't foget to change the duration also in CSS
+			opener: function(element) {
+				return element.find('img');
+			}
+		}
+        
+    });
+
+});
+    </script>
+
+</head>
+<body id="equipe">
+    <header id="cabecalho">
+        <div class="container">
+            <img src="../imagens/logo.png" alt="logo">
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../internas/missoes.html">Missões</a></li>
+                    <li><a href="../internas/equipe.html">Equipe</em></a></li>
+                    <li><a href="../internas/modelos.html">Modelo</a></li>
+                    <li><a href="../internas/video.html">Video</a></li>
+                    <li><a href="../internas/trabalhe.html">Trabalhe Conosco</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>  
+    
+ <section id="fotos">
+    <div class="container">
+        <div id="galeria-fotos">
+            <a href="../imagens/astronautas/astronauta1.jpg" title="CARGO:Astronauta NACIONALIDADE:Americana"><img src="../imagens/astronautas/astronauta1.jpg" alt=""></a>
+            <a href="../imagens/astronautas/astronauta2.jpg" title="CARGO:Engenheiro de sistemas NACIONALIDADE:Australiana"><img src="../imagens/astronautas/astronauta2.jpg" alt=""></a>
+            <a href="../imagens/astronautas/astronauta3.jpg" title="CARGO:Engenheiro de computação NACIONALIDADE:Americana"><img src="../imagens/astronautas/astronauta3.jpg" alt=""></a>
+            <a href="../imagens/astronautas/astronauta4.jpg" title="CARGO:Astronauta NACIONALIDADE:Russo"><img src="../imagens/astronautas/astronauta4.jpg" alt=""></a>
+            <a href="../imagens/astronautas/astronauta5.jpg" title="CARGO:Astronauta NACIONALIDADE:Americana"><img src="../imagens/astronautas/astronauta5.jpg" alt=""></a>
+            <a href="../imagens/astronautas/astronauta6.jpg" title="CARGO:Cientista pesquisador NACIONALIDADE:Mexicano"><img src="../imagens/astronautas/astronauta6.jpg" alt=""></a>
+
+        </div>
+    </div>
+</section>
+</body>
+</html>

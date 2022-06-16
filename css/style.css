@@ -1,0 +1,290 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* CABECALHO*/
+
+:root{
+    --color-1: rgba(1, 1, 1, 1);
+    --color-2: #000;
+    --color-3: #999;
+    --color-4: #fff;
+}
+#container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#cabecalho{
+    position: fixed;
+    background-color: var(--color-1);
+    width: 100%;
+    top: 0;
+    z-index: 2;
+}
+
+#cabecalho .container{
+    display: flex;
+    justify-content: space-around ;
+    align-items: center;
+    height: 50px;
+}
+
+#cabecalho #logo{
+    max-width: 5px;
+}
+
+#cabecalho nav li{
+    display: inline-block;
+}
+
+#cabecalho nav li a{
+    text-decoration: none;
+    color: var(--color-4);
+    display: flex;
+    padding: 15px 10px;
+    transition: all 0.5s linear;
+}
+
+#cabecalho nav li a:hover{
+    background-color: rgb(99, 97, 97);
+    color: var(--color-4);
+}
+/*HOME*/
+#home{
+    background-image: url(../imagens/backgrounds/lua.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; /*utiliza a imagem da melhor forma possivel*/
+    background-attachment: fixed;
+}
+
+#titulo{
+    color: var(--color-4);
+    font-size: 100px;
+    text-align: center;
+    margin-top: 400px;
+}
+
+/*MISSÕES*/
+#conteudom{
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--color-4);
+    text-align: justify;
+    max-width: 800px;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid var(--color-4);
+}
+
+#conteudom *{
+    margin-bottom: 20px;
+}
+
+#missoes{
+    background-image: url(../imagens/backgrounds/marte.jpg);
+    background-repeat: no-repeat;
+    padding-top: 60px;
+    background-size: cover; /*utiliza a imagem da melhor forma possivel*/
+    background-attachment: fixed;
+}
+
+#conteudom{
+    max-width: 1000px;
+	margin: 30px auto;
+}
+#conteudom img {
+	border-radius: 5px;
+}
+#conteudom #m1 {
+	float: left;
+	margin-right: 35px;
+}
+
+#conteudom #m3 {
+	float: right;
+	margin-left: 20px;
+}
+
+#conteudom b {
+    color: var(--color-4);
+	text-align: justify;
+	margin-bottom: 20px;
+	line-height: 20px;
+}
+
+/*EQUIPE*/
+#equipe{
+    background-image: url(../imagens/backgrounds/espaço.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+#fotos{
+    padding: 50px 0;
+}
+
+#fotos #galeria-fotos{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 30px;
+    margin-left: 150px;
+}
+
+#fotos #galeria-fotos img{
+    display: block;
+    width: 300px;
+    transition: all 0.3s linear;
+}
+
+#fotos #galeria-fotos img:hover{
+    transform: scale(1.2);
+}
+
+/*VIDEO*/
+#video iframe{
+    max-width: 50%;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    margin: 0 auto;
+    display: block;
+    margin-top: 50px;
+    border-color: rgba(0, 0, 0, 0.298);
+}
+
+#videop{
+    background-image: url(../imagens/backgrounds/foguete.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+#video h2{
+    color: var(--color-4);
+    text-align: center;
+    margin-top: 100px;
+    font-size: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#conteudom{
+        font-family: Arial, Helvetica, sans-serif;
+        color: var(--color-4);
+        text-align: justify;
+        background-color: rgba(132, 101, 28, 0.553);
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 30px;
+        border-radius: 10px;
+        border: 2px solid var(--color-4);
+    }
+
+#conteudom *{
+        margin-bottom: 20px;
+    }
+
+/*MODELOS*/
+#modelos{
+    background-image: url(../imagens/backgrounds/planeta.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#f9 h1{
+    display: block;
+    color: var(--color-4);
+    text-align: center;
+    margin-top: 100px;
+    font-size: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#f9 #f91{
+    margin-left: 650px;
+    margin-top: 50px;
+}
+
+#f9 p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--color-4);
+    text-align: justify;
+    max-width: 800px;
+    padding: 30px;
+    margin-left: 500px;
+    font-size: larger;
+}
+
+#video2 iframe{
+    max-width: 50%;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    margin: 0 auto;
+    display: block;
+    margin-top: 50px;
+    border-color: rgba(0, 0, 0, 0.298);
+    margin-bottom: 100px;
+}
+
+/*FALE CONOSCO*/
+
+#trabalhe{
+    background-image: url(../imagens/backgrounds/espaçot.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#formulario fieldset{
+	max-width: 400px;
+	margin: 0 auto;
+	padding: 20px;
+    background-color: rgba(255, 255, 255, 0.261);
+    margin-top: 50px;
+}
+
+#formulario fieldset div{
+	margin-bottom: 20px;
+}
+
+#formulario input, #formulario select, #formulario textarea{
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #999;
+}
+
+ #formulario #nome, #formulario #email, #formulario #formacao, #formulario #data-nasc{
+	 display: block;
+	 padding-top: 5px;
+ }
+ 
+#formulario textarea{
+	display: block;
+}
+
+#formulario #but{
+	background-color: var(--color-3);
+	color: var(--color-4);
+	border: none;
+	padding-left: 20px; /*prenchimento interno*/
+	padding-right: 20px;
+	cursor: pointer;
+}
+
+#formulario #but:hover{
+	background-color: var(--color-3);
+}
+
+#formulario h1{
+    display: block;
+    color: var(--color-4);
+    text-align: center;
+    margin-top: 100px;
+    font-size: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
